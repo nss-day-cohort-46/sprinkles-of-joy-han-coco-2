@@ -1,5 +1,7 @@
 # Sprinkles of Joy
 
+[ERD link](https://dbdiagram.io/d/602e999f80d742080a3b1910)
+
 ## Settings
 After each team member clones down the repository
 1. Make a copy of the `Settings.js.example` file in the `scripts` directory and remove the `.example` extension.
