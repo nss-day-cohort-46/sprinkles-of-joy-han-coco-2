@@ -9,12 +9,13 @@ export const CategorySelect = () => {
   getCategories()
   //added .then
   .then(() => {
-    const category = useCategories()
-    render(category)
+    categories = useCategories()
+    render()
   })
 }
 
 const render = () => {
+  // debugger
   contentTarget.innerHTML = `
       <select class="dropdown" id="categorySelect">
           <option value="0">All baked goods...</option>
@@ -27,7 +28,7 @@ eventHub.addEventListener("change", changeEvent => {
   if (changeEvent.target.id === "categorySelect") {
     const categoryCustomEvent = new CustomEvent("categorySelected", {
       detail: {
-        selectedCategory: changeEvent.target.value
+        selectedCategory: parseInt(changeEvent.target.value)
       }
     })
     eventHub.dispatchEvent(categoryCustomEvent)
