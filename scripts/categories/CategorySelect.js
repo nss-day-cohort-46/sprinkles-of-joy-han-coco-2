@@ -21,6 +21,7 @@ const render = () => {
           <option value="0">All baked goods...</option>
           ${categories.map(category => `<option value="${category.id}">${category.name}</option>`).join("")}
       </select>
+      <button id="reviewsList">Add Review</button>
   `
 }
 
