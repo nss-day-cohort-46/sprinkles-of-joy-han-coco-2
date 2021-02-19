@@ -11,6 +11,8 @@ export const Product = (product, category) => {
               <button id="addProduct">Add to Cart</button>
               <p>${product.description} [${category.name}]</p>
           </div>
+          <div class="reviews"
+          </div>
       </section>
   `
 }
