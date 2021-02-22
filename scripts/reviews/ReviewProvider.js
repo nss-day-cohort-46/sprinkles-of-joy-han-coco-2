@@ -14,3 +14,17 @@ export const getReviews = () => {
       reviews = reviewsArray
     })
 }
+
+export const saveReview = entry => {
+  return fetch (`${bakeryAPI.baseURL}/reviews`, {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(entry)
+})
+}
+
+const reviewForm = () => {
+  
+}
