@@ -22,7 +22,7 @@ export const customerLogin = (email, password) => {
     .then(user => user.length ? user[0] : false)
 }
 
-export const saveCustomer = (customerObj) => {
+export const registerCustomer = (customerObj) => {
   return fetch(`${bakeryAPI.baseURL}/customers`, {
     method: "POST",
     hearders: {
